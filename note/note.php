@@ -6,7 +6,6 @@ if(!isset($_SESSION['username'])){
     header("Location: ../login");
 }
 ?>
-
 <div class="container">
     <div class="row">
         <div class="col s12 m6 l4">
@@ -20,7 +19,6 @@ if(!isset($_SESSION['username'])){
             </div>
         </div>
     </div>
-
 </div>
 <div id="render"></div>
 <script>
