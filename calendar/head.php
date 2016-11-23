@@ -6,6 +6,7 @@
  * Time: 23:04
  */
 ?>
+<title>Calendar</title>
 <meta charset='utf-8' />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link href='css/fullcalendar.css' rel='stylesheet' />

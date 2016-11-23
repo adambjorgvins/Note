@@ -1,9 +1,8 @@
 <?php
 session_start();
-$userid = $_SESSION["username"];
-
-if(!isset($_SESSION["username"])){
-    header('Location: ../login');
+if(!isset($_SESSION['username'])){
+    $_SESSION['returnUrl'] = '/clock';
+    header("Location: ../login");
 }
 
 require("php/config.php");

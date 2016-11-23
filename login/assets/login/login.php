@@ -17,7 +17,12 @@ $upass = trim(strip_tags($_POST['password']));
         // Sets session on user
         $_SESSION["username"] = $uname;
         // Redirect from Auth class
-        $user->redirect('/');
+        if(isset($_SESSION['returnUrl'])){
+            $retUrl = $_SESSION['returnUrl'];
+            $user->redirect($retUrl);
+        } else {
+            $user->redirect('/');
+        }
     }
     else
     {

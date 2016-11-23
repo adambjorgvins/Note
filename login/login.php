@@ -11,7 +11,12 @@ require_once ("assets/config.php");
 $error = "";
 
 if(isset($_SESSION['username'])){
-    header("Location: /");
+    if(isset($_SESSION['returnUrl'])){
+        $retUrl = $_SESSION['returnUrl'];
+        header("Location: ". $retUrl);
+    } else {
+        header("Location: /");
+    }
 }
 
 if (isset($_POST['submit'])){

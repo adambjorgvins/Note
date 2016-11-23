@@ -6,5 +6,7 @@
  * Time: 20:35
  */
 ?>
+
+<title>Glossary</title>
 <script src="/translate/script/script.js"></script>
 <link href="/translate/css/style.css" rel="stylesheet">

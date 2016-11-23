@@ -5,8 +5,9 @@ require('assets/Main.php');
 
 $class = new Main();
 
-if(!isset($_SESSION["username"])){
-	$class->redirect('../login');
+if(!isset($_SESSION['username'])){
+	$_SESSION['returnUrl'] = '/calendar';
+	header("Location: ../login");
 }
 
 ?>

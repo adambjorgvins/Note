@@ -6,4 +6,4 @@
  * Time: 20:26
  */
 ?>
-<p>This is the landing page.</p>
+<p>Hér Bjóðum við fólk velkomið á síðuna og vísum þeim á <a href="login">Login</a></p>
